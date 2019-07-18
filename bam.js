@@ -61,7 +61,7 @@ var promptCustomer = function(res){
           }).then(function(answer){
             if((res[id].stockquantity-answer.quant)>0){
               connection.query("UPDATE products SET stockquantity='"+(res[id].stockquantity-
-                answer.quant)+"' WHERE productname='"+product
+                answer.quant)+"' WHERE productname= '"+product
                 +"'", function(err,res2){
                 console.log("Purchase successful!");
                 makeTable();
