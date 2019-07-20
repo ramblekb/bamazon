@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS bamazon;
-CREATE DATABASE bamazon;
+DROP DATABASE IF EXISTS bammy_DB;
+CREATE DATABASE bammy_DB;
 
-USE bamazon;
+USE bammy_DB;
 
 CREATE TABLE products (
 	itemid INT AUTO_INCREMENT NOT NULL,
@@ -24,5 +24,3 @@ VALUES
 ("green apples","bodegaThree",3.55,22),
 ("blackberries","bodegaFour",3.80,16),
 ("tomatoes","bodegaFive",4.10,37);
-
-SELECT * FROM products
